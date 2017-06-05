@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+       <link rel="stylesheet" href="Contents/css/pikaday.css"/>
+   
+<link href="Contents/css/jquery-ui.css" rel="stylesheet" />  
+<script src="Script/jquery-3.2.1.min.js"></script>  
+<script src="Script/jquery-ui.js"></script> 
+    <link href="Contents/css/bootstrap.css" rel="stylesheet" type="text/css" />
+   
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+   
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+     
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+        
+        <br />
+        <br />
+        <br />
+        <br />
+<section class="callaction">
+	<div class="container">
+		<div class="row">
+		<div class="col-lg-6">
+								<div class="cta-text">
+        <form class="register-form" action="Home.php">
+							<div class="form-group">
+							<input class="form-control input-md" placeholder="Enter Your TO Day Work Details" type="text" value="" name="Note" id="search">
+							</div>
+							
+								
+								<div class="form-group">
+								<input class="form-control input-md" placeholder="Selelect Date" type="text" value="" name="Date" id="datepicker">
+							   </div>
+							  
+								
+								
+									<input class="btn btn-theme btn-lg" type="submit" value="Submit Now">
+								
+								
+
+								
+							</form>
+							</div></div></div></div></section>
+    <script src="Script/pikaday.js"></script>
+         <script>
+
+             var picker = new Pikaday(
+             {
+                 field: document.getElementById('datepicker'),
+                 firstDay: 1,
+                 minDate: new Date(),
+                 maxDate: new Date(2020, 12, 31),
+                 yearRange: [2000, 2020]
+             });
+
+    </script>
+    <script src="Script/jquery-3.2.1.min.js"> </script>
+    <script src="Script/bootstrap.min.js"> </script>
+    
+    </form>
+    
+</body>
+</html>
